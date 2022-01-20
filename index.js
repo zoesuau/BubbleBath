@@ -19,3 +19,19 @@ $(".mobile_header").on("click",function(){
     }
     
     })
+
+    $(".group").on("click",function() {
+        // console.log($(this).text())
+        // 當我點選到當前群組，找到下層的question的兄弟，並顯示
+        $(this).find(".question").siblings().show()
+        $(this).find("i").removeClass("fa-folder")
+        $(this).find("i").addClass("fa-folder-open")
+    
+    //  當我點選當前群組，找到同層兄弟，往下層找.answer。並影藏
+        $(this).siblings().find(".answer").hide()
+        $(this).siblings().find("I").removeClass("fa-folder-open")
+        $(this).siblings().find("I").addClass("fa-folder")
+    
+    
+        
+        })  

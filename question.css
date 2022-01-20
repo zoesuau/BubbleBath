@@ -1,0 +1,37 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@500&display=swap');
+
+.question_box {
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 100px;
+  display: flex;
+  /* align-items: center; */
+  justify-content: column;
+  
+}
+
+.question_box a {
+    color: rgb(54, 40, 12);
+
+}
+
+.question {
+
+    line-height: 40px;
+   
+
+}
+
+.question:first-child.question {
+    border: none;
+}
+
+/* i.icon{
+    float:left;
+    margin-top:10px;
+    margin-left:2px ;
+} */
+.answer {
+
+    display: none;
+}
