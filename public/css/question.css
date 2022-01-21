@@ -55,7 +55,7 @@ i.icon {
 
 }
 .footer_img {
-    background-image: url(/public/images/body_bg.png);
+    background-image: url(../images/body_bg.png);
 }
 @media screen and (max-width: 768px) {
     .about_bnt {

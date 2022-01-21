@@ -191,8 +191,9 @@ section img {
 .about_img2 {
     width   : 60%;
     position: absolute;
+    left: -3%;
     bottom  : -10%;
-    opacity : 0.8;
+    opacity : 0.9;
     z-index : 2;
 
 }
