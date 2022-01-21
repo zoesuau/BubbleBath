@@ -24,7 +24,7 @@
 
 .about_text2 {
     text-align         : center;
-    background-image   : url(/public/images/white\ bb.png);
+    background-image   : url(../images/white\ bb.png);
     background-repeat  : no-repeat;
     background-size    : contain;
     background-position: center;
@@ -87,7 +87,7 @@
     height  : 100%;
 }
   .footer_img{
-        background-image: url(/public/images/body_bg.png);
+        background-image: url(../images/body_bg.png);
     }
 @media screen and (max-width: 768px) {
     .about_text2 h4 {
@@ -96,7 +96,7 @@
 
     .about_text2 {
         text-align         : center;
-        background-image   : url(/public/images/white\ bb.png);
+        background-image   : url(../images/white\ bb.png);
         background-repeat  : no-repeat;
         background-size    : contain;
         background-position: center;
