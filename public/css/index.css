@@ -8,7 +8,8 @@ a {
 }
 
 .container {
-    /* width: 1440px; */
+    max-width: 1140px;
+    margin   : auto;
 }
 
 body {
@@ -16,7 +17,7 @@ body {
     padding         : 0;
     margin          : 0;
     background-image: url(../images/body_bg.png);
-color: rgb(54, 40, 12);
+    color           : rgb(54, 40, 12);
 }
 
 header a {
@@ -36,18 +37,25 @@ header a {
 }
 
 header li {
-    float          : left;
+    float          : right;
     list-style-type: none;
     width          : 20%;
-    padding-top    : 45px;
+    padding-top    : 18px;
 
+}
+
+
+
+header li :hover {
+    padding-bottom: 5%;
+    border-bottom : 3px solid rgb(243, 48, 48);
 }
 
 header {
     padding         : 0;
     margin          : 0;
     width           : 100%;
-    height          : 100px;
+    height          : 90px;
     background-color: brown;
     display         : flex;
     justify-content : space-between;
@@ -55,21 +63,28 @@ header {
     z-index         : 999;
 }
 
+/*  */
+
 header>.icon {
     width          : 15%;
-    padding-top    : 45px;
+    padding-top    : 25px;
     display        : flex;
     justify-content: space-around;
 }
 
+header>.icon>a:hover {
+    color: rgb(245, 180, 180);
+
+}
+
 .icon a {
     color    : rgb(245, 240, 240);
-    font-size: 2rem;
+    font-size: 1.5rem;
 }
 
 .menu_icon {
     width       : 60px;
-    height      : 60px;
+    height      : 40px;
     /* border   : 1px solid #000; */
     position    : absolute;
     top         : 20%;
@@ -82,8 +97,8 @@ header>.icon {
 .mobile_menu_icon3 {
     transition      : all 1s;
     position        : absolute;
-    width           : 60px;
-    height          : 10px;
+    width           : 50px;
+    height          : 6px;
     background-color: rgb(245, 240, 240);
     border-radius   : 20px;
 }
@@ -116,7 +131,7 @@ section {
 }
 
 section img {
-    padding-top: 100px;
+    padding-top: 60px;
     width      : 100%;
 
 }
@@ -145,24 +160,27 @@ section img {
 }
 
 .button {
-    width           : 20%;
-    /* height       : 4%; */
+    /* width           : 20%; */
+    padding         : 1%;
     background-color: brown;
     border-bottom   : 8px solid rgb(155, 30, 30);
     border-radius   : 20px;
     position        : absolute;
     bottom          : 10%;
-    left            : 40%;
+    left            : 50%;
+    transform       : translate(-50%, -0%);
     box-shadow      : 10px 10px 10px 1px #1a141467;
+
+
+
 
 }
 
 .button a {
-    text-align : center;
-    line-height: 1rem;
-    color      : ivory;
-    font-size  : 1.5em;
 
+    /* line-height: 0.5rem; */
+    color    : ivory;
+    font-size: 1.5em;
 }
 
 .logo_model {
@@ -180,29 +198,33 @@ section img {
 
 .about_img1 {
 
-    position: absolute;
-    right   : 0%;
-    top     : -3%;
-    opacity : 0.9;
-    width   : 60%;
+    position  : absolute;
+    right     : 0%;
+    top       : 0%;
+    opacity   : 0.9;
+    width     : 55%;
+    /* z-index: 1; */
 
 }
 
 .about_img2 {
-    width   : 60%;
-    position: absolute;
-    left: -3%;
-    bottom  : -10%;
-    opacity : 0.9;
-    z-index : 2;
+    width      : 55%;
+    position   : absolute;
+    /* left    : 5%; */
+    bottom     : 0%;
+    opacity    : 0.9;
+    /* z-index : 1; */
 
 }
 
 .about_text {
-color: rgb(43, 26, 5);
-    padding-top : 42%;
-    padding-left: 60%;
-    text-align  : center;
+    color         : rgb(43, 26, 5);
+    padding-top   : 45%;
+    padding-left  : 60%;
+    padding-bottom: 10%;
+
+    text-align: center;
+
 }
 
 .about_text h2 {
@@ -211,42 +233,44 @@ color: rgb(43, 26, 5);
 
 .service {
     width      : 100%;
-    padding-top: 3%;
+    padding-top: .3%;
     position   : relative;
+
 }
 
 
 
 .service>.button1 {
 
-    position: absolute;
-    top     : 10%;
-    left    : 40%;
+    position : absolute;
+    top      : 10%;
+    left     : 50%;
+    transform: translate(-50%, -0%);
+    padding  : 1%;
 
-    width              : 20%;
-    /* height          : 10%; */
-    background-color   : brown;
-    border-bottom      : 8px solid rgb(155, 30, 30);
-    border-radius      : 20px;
+    background-color: brown;
+    border-bottom   : 8px solid rgb(155, 30, 30);
+    border-radius   : 20px;
 
     box-shadow: 10px 10px 10px 1px #1a141467;
 
 }
 
 .button1 a {
-    text-align : center;
-    line-height: 1rem;
-    color      : ivory;
-    font-size  : 1.5em;
+
+    color    : ivory;
+    font-size: 1.5em;
 
 }
 
+
+
 .button_img {
-    position: absolute;
-    top     : 30%;
-    /* left    : 8%; */
-    width   : 100%;
-    opacity : .9;
+    position       : absolute;
+    top            : 30%;
+    /* left        : 8%; */
+    width          : 100%;
+    opacity        : .9;
     text-align     : center;
     display        : flex;
     justify-content: space-around;
@@ -255,54 +279,60 @@ color: rgb(43, 26, 5);
 .button_img img {
 
     width: 110%;
-   
-   
+
+
 }
-.button_img1{ animation: bb 2500ms infinite ease-in-out;
+
+.button_img1 {
+    animation: bb 2500ms infinite ease-in-out;
 }
-.button_img2{
+
+.button_img2 {
     animation: cc 2500ms infinite ease-in-out;
 
 }
-@keyframes cc{
+
+@keyframes cc {
     0% {
-        -webkit-transform: rotate(5deg) scale(1)  translate(-10%, -30%);
-        transform: rotate(5deg) scale(1) translate(-10%, -30%);
+        -webkit-transform: rotate(5deg) scale(1) translate(-10%, -30%);
+        transform        : rotate(5deg) scale(1) translate(-10%, -30%);
     }
-    
+
     50% {
-        -webkit-transform: rotate(-5deg) scale(1)  translate(-10%, -30%);
-        transform: rotate(-5deg) scale(1)  translate(-10%, -30%);
+        -webkit-transform: rotate(-5deg) scale(1) translate(-10%, -30%);
+        transform        : rotate(-5deg) scale(1) translate(-10%, -30%);
     }
-    
+
     100% {
-    -webkit-transform: rotate(5deg) scale(1)  translate(-10%, -30%);
-    transform: rotate(5deg) scale(1)  translate(-10%, -30%);
+        -webkit-transform: rotate(5deg) scale(1) translate(-10%, -30%);
+        transform        : rotate(5deg) scale(1) translate(-10%, -30%);
     }
-    
+
+}
+
+@keyframes bb {
+    0% {
+        -webkit-transform: rotate(-5deg) scale(1) translate(-10%, -30%);
+        transform        : rotate(-5deg) scale(1) translate(-10%, -30%);
     }
-@keyframes bb{
-0% {
-    -webkit-transform: rotate(-5deg) scale(1) translate(-10%, -30%);
-    transform: rotate(-5deg) scale(1) translate(-10%, -30%);
-}
 
-50% {
-    -webkit-transform: rotate(5deg) scale(1) translate(-10%, -30%);
-    transform: rotate(10deg) scale(1) translate(-10%, -30%);
-}
+    50% {
+        -webkit-transform: rotate(5deg) scale(1) translate(-10%, -30%);
+        transform        : rotate(10deg) scale(1) translate(-10%, -30%);
+    }
 
-100% {
--webkit-transform: rotate(-5deg) scale(1) translate(-10%, -30%);
-transform: rotate(-5deg) scale(1) translate(-10%, -30%);
-}
+    100% {
+        -webkit-transform: rotate(-5deg) scale(1) translate(-10%, -30%);
+        transform        : rotate(-5deg) scale(1) translate(-10%, -30%);
+    }
 
 }
+
 @media screen and (max-width: 768px) {
     section img {
         padding-top: 0px;
-       
-    
+
+
     }
 
     .icon a {
@@ -311,6 +341,7 @@ transform: rotate(-5deg) scale(1) translate(-10%, -30%);
 
     header {
         position: relative;
+        height  : 60px;
     }
 
     .nav {
@@ -357,13 +388,13 @@ transform: rotate(-5deg) scale(1) translate(-10%, -30%);
     }
 
     .about_img2 {
-        position   : static;
-        /* position: absolute;
-        bottom     : -190%; */
-        position   : relative;
-        width      : 100%;
-        z-index    : -1;
-
+        position    : static;
+        /* position : absolute;
+        bottom      : -190%; */
+        position    : relative;
+        width       : 100%;
+        z-index     : -1;
+        padding-left: 4%;
     }
 
     .about_text {
@@ -393,20 +424,23 @@ transform: rotate(-5deg) scale(1) translate(-10%, -30%);
         width: 90%;
 
     }
-    .button1 a {
+
+    /* .button1 a {
         text-align : center;
-        line-height: 1rem;
+        line-height: 0.5rem;
         color      : ivory;
-        font-size  : 1.2em;
-    
+        font-size  : 1em;
+
     }
+
     .button a {
-        text-align : center;
-        line-height: 1rem;
+       
         color      : ivory;
-        font-size  : 1.2em;
+        font-size  : 1em;
+
+    } */
     
-    }
+  
 }
 
 @media screen and (max-width: 480px) {
@@ -421,9 +455,16 @@ transform: rotate(-5deg) scale(1) translate(-10%, -30%);
         padding: 0.3em;
     }
 
-    .button p {
+    .button1 a {
+        font-size: 0.8em;
 
-        font-size: 1em;
+        
+    }
+
+
+    .button a {
+
+        font-size: 0.8em;
 
     }
 
@@ -448,7 +489,7 @@ transform: rotate(-5deg) scale(1) translate(-10%, -30%);
     }
 
     .about_text {
-        position: sticky;
+        position       : sticky;
         top            : 1%;
         left           : 0%;
         padding-top    : 0%;

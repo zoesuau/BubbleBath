@@ -1,3 +1,19 @@
+.bubble_img1{
+    position: absolute;
+    right: 5%;
+    top: 100%;
+    opacity: 0.5;
+    transform:rotate(160deg);
+    width:5%
+}
+.bubble_img2{
+    position: absolute;
+    left:-2%;
+    top: 30%;
+    opacity: 0.5;
+    transform:rotate(190deg);
+    width:18%
+}
 .service2 {
     padding-top: 100px;
     position   : relative;
@@ -39,8 +55,7 @@
     opacity            : 0.8;
     display            : flex;
     flex-wrap          : wrap;
-    justify-content    : space-around;
-}
+    justify-content  :center}
 
 .service_card h2 {
     width: 90%;

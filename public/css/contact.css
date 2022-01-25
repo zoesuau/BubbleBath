@@ -1,0 +1,162 @@
+.social {
+    padding-top: 150px;
+}
+
+.about_bnt {
+    text-align: center;
+    opacity   : 0.8;
+}
+
+.social_box {
+    padding: 5% ;
+    display        : flex;
+    justify-content: space-around;
+}
+
+.social_box p {
+
+    font-size     : 1.6rem;
+    font-weight   : 800;
+    z-index: 3;
+    top      : 55%;
+    left     : 45%;
+    transform: translate(-50%, -50%);
+    position : absolute;
+
+}
+
+.social i{
+    opacity: 0.9;
+   display: none;
+    z-index: 4;
+    position: absolute;
+    top      : 40%;
+    left     : 45%;
+    transform: translate(-50%, -50%);
+    /* color: cadetblue; */
+    font-size: 5rem;
+}
+
+.social_box div,
+img {
+    border-radius: 50px;
+   
+}
+.social_box img,.social_mask{
+    width: 90%;
+}
+.social_mask:hover {
+    opacity: 1;
+    background-color: rgb(240, 203, 145);
+}
+
+.social_mask {
+    position        : absolute;
+    top             : 0;
+    left            : 0;
+    z-index         : 1;
+    background-color: rgba(116, 115, 114, 0.89);
+    width           : 100%;
+    height          : 98%;
+    opacity         : 0.4;
+    /* border-radius: 20px; */
+    width: 90%;
+}
+
+.social_box_line {
+
+    position: relative;
+
+}
+
+.social_box_fb {
+    position: relative;
+
+}
+
+.social_box_ig {
+    position: relative;
+
+
+}
+/* .from_from p {
+    font-size  : 1.3em;
+    font-weight: 10000;
+    text-align : center;
+} */
+.form_form{
+    margin: 5% auto;
+    width: 70%;
+    text-align: center;
+}
+.form_form label {
+    max-width: 120px;
+    min-width: 120px;
+    display  : inline-block;
+    margin: 0 auto;
+
+}
+
+ input,
+textarea {
+    margin-top   : 1em;
+    margin-bottom: 1em;
+    min-width    : 300px;
+    max-width    : 450px;
+}
+
+textarea {
+    min-height: 200px;
+}
+label,textarea{
+    vertical-align:middle;
+}
+.enter{
+    background-color: brown; 
+    border: brown;
+    height: 3em; 
+    text-align: center;
+    border-radius: 20px;
+    color: rgb(248, 228, 222);
+    font-size: 16px;
+
+}
+.footer_img {
+    background-image: url(../images/body_bg.png);
+}
+@media screen and (max-width: 768px) {
+    .social {
+        padding-top: 20px;
+    }
+    .social_box p,i{
+      font-size: .7rem;
+      position: absolute;
+        top      : 50%;
+        left     : 45%;
+        transform: translate(-50%, -50%);
+        
+    }
+
+    .social i{
+        opacity: 0.9;
+       display: none;
+        z-index: 4;
+        position: absolute;
+        top      : 40%;
+        left     : 45%;
+        transform: translate(-50%, -50%);
+        /* color: cadetblue; */
+        font-size: 2rem;
+    }
+    .form_form{
+        margin: 5% auto;
+        width: 90%;
+    }
+    
+}
+@media screen and (max-width: 480px) {
+
+
+
+
+}

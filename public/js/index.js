@@ -23,15 +23,26 @@ $(".mobile_header").on("click",function(){
     $(".group").on("click",function() {
         // console.log($(this).text())
         // 當我點選到當前群組，找到下層的question的兄弟，並顯示
-        $(this).find(".question").siblings().show()
-        $(this).find("i").removeClass("fa-folder")
-        $(this).find("i").addClass("fa-folder-open")
+        $(this).find(".question").siblings().slideDown()
+        // $(this).find("i").removeClass("fa-bone")
+        // $(this).find("i").addClass("fa-bone-break")
     
     //  當我點選當前群組，找到同層兄弟，往下層找.answer。並影藏
-        $(this).siblings().find(".answer").hide()
-        $(this).siblings().find("I").removeClass("fa-folder-open")
-        $(this).siblings().find("I").addClass("fa-folder")
+        $(this).siblings().find(".answer").slideUp()
+        // $(this).siblings().find("I").removeClass("fa-bobe-break")
+        // $(this).siblings().find("I").addClass("fa-regular")
     
     
         
         })  
+
+        $(".social_box div").hover( function(){
+          
+          if( $(".social_box div").hover())
+          
+          { $(this).find("i").toggle(400)
+       
+        } else{
+     
+          }
+        })

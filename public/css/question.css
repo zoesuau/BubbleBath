@@ -1,14 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@500&display=swap');
 
 .question_box {
-  margin: 5%;
+ 
+    margin: 4% auto;
 }
 
 .about_bnt {
 
     text-align : center;
     padding-top: 150px;
-opacity: 0.8;
+    opacity    : 0.8;
 }
 
 .question_box a {
@@ -17,89 +18,92 @@ opacity: 0.8;
 }
 
 .question {
-    width:70%;
-    margin-left: auto;
-    margin-right: auto;
+    width        : 70%;
+    margin-left  : auto;
+    margin-right : auto;
     margin-bottom: 2%;
-    padding: 1% 1%;
-    cursor: pointer;
+    padding      : 1% 1%;
+    cursor       : pointer;
 
-    font-size: 16px;
-    border-radius: 15px;
-    background-color:   brown ;
+    font-size       : 16px;
+    border-radius   : 15px;
+    background-color: brown;
 
     color: rgb(248, 246, 246);
-    
+
 }
 
 .question:first-child.question {
     border: none;
 }
 
-i.icon {
+/* i.icon {
     float:left; 
     margin-top:0.5%;
      margin-right:1% ; 
      margin-left: 1%;
-}
+} */
 
 .answer {
-    display: none;
-    width: 70%;
+    display      : none;
+    width        : 70%;
     margin-bottom: 25px;
-    margin-left: auto;
-    margin-right: auto;
-    padding: 10px 20px;
-    position: relative;
-    
+    margin-left  : auto;
+    margin-right : auto;
+    padding      : 10px 20px;
+    position     : relative;
+
 
 }
+
 .footer_img {
     background-image: url(../images/body_bg.png);
 }
+
 @media screen and (max-width: 768px) {
     .about_bnt {
 
-      
-        padding-top: 0px;
-    margin: 10%;
-    }
-    
-    .question {
-        width:80%;
 
-        
+        padding-top: 0px;
+        margin     : 10%;
     }
-    
-  
-    
-    .answer {
-        
+
+    .question {
         width: 80%;
-    
-    
+
+
     }
-  
+
+
+
+    .answer {
+
+        width: 80%;
+
+
+    }
+
 
 
 }
+
 @media screen and (max-width: 480px) {
 
     .question {
-        width:90%;
-
-        
-    }
-    
-  
-    
-    .answer {
-        
         width: 90%;
-    
-    
+
+
     }
-  
+
+
+
+    .answer {
+
+        width: 90%;
+
+
+    }
+
 
 
 }

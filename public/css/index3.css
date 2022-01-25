@@ -50,7 +50,7 @@ p {
 .footer_textbox {
 
     text-align: center;
-    width     : 30%;
+    width     : 100%;
     font-size : 0.5em;
 }
 
@@ -65,7 +65,7 @@ p {
 .gototop {
     position: fixed;
     bottom  : 10%;
-    right   : 0%;
+    right   : 2%;
 
     width        : 50px;
     height       : 50px;

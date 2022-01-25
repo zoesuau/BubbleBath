@@ -1,8 +1,8 @@
 .yellow_bubble {
     width           : 100%;
     background-color: rgb(250, 235, 186);
-    padding-top     : 8%;
-    padding-bottom  : 1%;
+    padding-top     : 15%;
+    padding-bottom  : 15%;
 
     text-align: center;
     position  : relative;
@@ -16,23 +16,20 @@
 
 .button2 {
 
-    width           : 20%;
-    height          : 15%;
+    padding: 1%;
     background-color: brown;
     border-bottom   : 8px solid rgb(155, 30, 30);
     border-radius   : 20px;
 
     box-shadow  : 10px 10px 10px 1px #1a141467;
    
-   margin:   10% auto;
-
-    /* position        : absolute;
-    bottom          : 10%;
-    left            : 40%; */
+    position: absolute;
+    bottom          : 1%;
+    left: 50%;
+    transform: translate(-50%,-0%);
 }
 .button2 a{
-  text-align : center;
-    line-height: 4rem;
+  
     color      : ivory;
     font-size  : 1.5em;
 }
@@ -507,17 +504,33 @@
         padding-bottom: 15%;
     }
 
-    .button2 a {
-        text-align : center;
-        line-height: 3.5rem;
-        color      : ivory;
-        font-size  : 1.2em;
-    
-    }
+  
 }
 
 
 @media screen and (max-width: 480px) {
+    .button2 {
 
+  
+
+        background-color: brown;
+        border-bottom   : 8px solid rgb(155, 30, 30);
+        border-radius   : 20px;
     
+        box-shadow  : 10px 10px 10px 1px #1a141467;
+       
+       
+    
+        position        : absolute;
+        bottom          : 5%;
+      
+    }
+    
+    .button2 a {
+        /* text-align : center; */
+        /* line-height: 2rem; */
+        color      : ivory;
+        font-size  : 0.8em;
+    
+    }
 }
