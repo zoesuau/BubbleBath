@@ -1,5 +1,18 @@
 
-
+ $(window).scroll(function () {
+        if ($(window).scrollTop() > 500) {
+           
+            $(".gotop").show()
+            $(".gotop").addClass("gotop_active")
+    
+            
+        } else {
+            // ($(window).scrollTop() < 600) {
+                
+                $(".gotop").hide()
+        }
+        
+    })
 $(".mobile_header").on("click",function(){
     console.log("hi")
     
@@ -57,3 +70,19 @@ $(".mobile_header").on("click",function(){
         }
         )
         wow.init();
+
+      //   $(window).scroll(function () {
+      //     if ($(window).scrollTop() > 900) {
+             
+      //         $(".gotop").stop().slideDown()
+      //         $(".gotop").addClass("gotop_active")
+      
+              
+      //     } else {
+      //         // ($(window).scrollTop() < 600) {
+                  
+      //             $(".gotop").stop().slideUp()
+      //     }
+          
+      // })
+     

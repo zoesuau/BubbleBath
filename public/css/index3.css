@@ -17,8 +17,8 @@ p {
 .footer_img {
     overflow        : hidden;
     background-color: rgb(250, 235, 186);
-   padding-top: 2%;
-   padding-bottom: 2%;
+    padding-top     : 2%;
+    padding-bottom  : 2%;
 }
 
 .footer_icon {
@@ -67,23 +67,50 @@ p {
     bottom  : 10%;
     right   : 2%;
 
-    width        : 50px;
-    height       : 50px;
-    border       : 4px dotted brown;
-    border-radius: 50px;
-    background-image: url(../images/body_bg.png);
-opacity: 0.9;
+    width           : 50px;
+    height          : 50px;
+    /* border          : 4px dotted rgb(151, 145, 145); */
+    /* border-radius   : 50px; */
+    /* background-image: url(../images/body_bg.png); */
+    /* opacity         : 0.9; */
+    z-index: 999;
 }
 
-.gototop a {
-    text-decoration: none;
-    color          :brown;
-    text-align     : center;
-    font-size      : 29px;
-    display        : block;
+.gototop a{
+    /* text-decoration: none; */
+    color          : rgb(245, 11, 11);
+    /* text-align     : center; */
+    font-size      : 3rem;
+    /* display        : block; */
+}
+
+.gotop  {
+    position: fixed;
+    right: 2%;
+    bottom: 2%;
+    font-size: 5rem;
+    animation: top 2.5s infinite;
+    display: none;
 }
 
 
+
+
+@keyframes top {
+    0% {
+        bottom: 2%;
+
+    }
+
+    50% {
+        bottom: 4%
+    }
+
+    100% {
+        bottom: 2%;
+        right: 2%
+    }
+}
 
 
 

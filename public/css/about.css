@@ -161,9 +161,12 @@
 
     .add {
         width: 100%;
+        margin       : 3%;
+
     }
 
     .map {
+        margin       : 3%;
         width: 100%
     }
     .footer_textbox{
